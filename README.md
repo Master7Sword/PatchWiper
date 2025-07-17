@@ -1,11 +1,15 @@
 # PatchWiper
 [ACM MM 2025] PatchWiper: Leveraging Dynamic Patch-Wise Parameters for Real-World Visible Watermark Removal
 
+![teaser](figs/teaser.png)
+
 ## Introduction
 
 Official implementation of the following paper:
 
 ## PatchWiper Network
+
+![model](figs/model.png)
 
 ## Quick Start
 
@@ -26,9 +30,9 @@ In this paper, we conduct all of the experiments on [PRWD](https://drive.google.
 
 - How to train my model?
 
-  We provide an example of training bash for Segmentation Network and Restoration Network respectively: ```scripts/train_SegNet.sh```, ```scripts/train_RestoreNet.sh``` 
+  We provide an example of training bash for Watermark Localization Network and Restoration Network respectively: ```scripts/train_WLN.sh```, ```scripts/train_RestoreNet.sh``` 
 
-  Please specify the checkpoint save path in ```--checkpoint_dir```, dataset path in ```--dataset_dir``` and Segmentation Network checkpoint path in ```--segnet_ckpt```.
+  Please specify the checkpoint save path in ```--checkpoint_dir```, dataset path in ```--dataset_dir``` and Watermark Localization Network checkpoint path in ```--wln_ckpt```.
 
 - How to test my model?
 
@@ -46,11 +50,12 @@ Here is the model trained on PRWD dataset:
 
 - [PatchWiper](https://drive.google.com/file/d/1fhbSgktTkp7DhfVkZ8yg3sR3AFAs-YiH/view?usp=drive_link)
 
-- [Segmentation Network](https://drive.google.com/file/d/18S5qVF9G8wBZ_kXiszYFVvReP7knZ-Wi/view?usp=drive_link)
+- [Watermark Localization Network(WLN)](https://drive.google.com/file/d/18S5qVF9G8wBZ_kXiszYFVvReP7knZ-Wi/view?usp=drive_link)
 
 ## Visualization Results
 We also show some qualitative comparision with state-of-art methods:
 
+![qualitative](figs/qualitative_sup.png)
 
 ## **Acknowledgements**
 Part of the code is based upon the previous work [SLBR](https://github.com/bcmi/SLBR-Visible-Watermark-Removal), [Restormer](https://github.com/swz30/Restormer) and [CoordFill](https://github.com/NiFangBaAGe/CoordFill).

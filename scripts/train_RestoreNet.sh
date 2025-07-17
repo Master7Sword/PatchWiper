@@ -12,7 +12,7 @@ python3 ../train_RestoreNet.py \
   --dataset $DATASET \
   --dataset_dir "/data1/mozihao/Data/Dewatermarking/pixabay/pixabay_256" \
   --checkpoint_dir "../checkpoint" \
-  --segnet_ckpt "../checkpoint/SegNet(PRWD).pth" \
+  --wln_ckpt "../checkpoint/WLN(PRWD).pth" \
   --num_workers 16 \
   --schedule 50 \
 

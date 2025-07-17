@@ -22,7 +22,7 @@ def main():
     parser.add_argument('--checkpoint_dir', type=str, default="checkpoint")
     parser.add_argument('--num_workers', type=int, default=16)
     parser.add_argument('--schedule', type=int, default=50)
-    parser.add_argument('--segnet_ckpt', type=str, required=True, help="SegNet checkpoint path")
+    parser.add_argument('--wln_ckpt', type=str, required=True, help="Watermark Localization Network checkpoint path")
     args = parser.parse_args()
 
     train_img_dir = os.path.join(args.dataset_dir, "train")
@@ -47,8 +47,8 @@ def main():
     model = nn.DataParallel(model, device_ids=device_ids).cuda()
 
     # Load SegNet checkpoint
-    segnet_ckpt_data = torch.load(args.segnet_ckpt, weights_only=True)
-    model.module.SegNet.load_state_dict(segnet_ckpt_data)
+    WLN_ckpt_data = torch.load(args.wln_ckpt, weights_only=True)
+    model.module.WLN.load_state_dict(WLN_ckpt_data)
 
     criterion = nn.L1Loss()
     criterion.cuda()

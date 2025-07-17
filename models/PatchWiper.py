@@ -1,18 +1,18 @@
 import torch
 import torch.nn as nn
 from .RestoreNetModules import RepresentationGenerationNet, PatchQueryNet
-from .SegNet import SegNet
+from .WLN import WatermarkLocalizationNetwork
 
 class PatchWiper(nn.Module):
     def __init__(self):
         super(PatchWiper, self).__init__()
 
-        self.SegNet = SegNet()
+        self.WLN = WatermarkLocalizationNetwork()
         self.PQN = PatchQueryNet(num_outputs=3, width=64, depth=5)
         self.RGN = RepresentationGenerationNet(self.PQN.num_params, n_downsampling=2, dim=64)
 
     def forward(self, x):
-        mask = self.SegNet.mask_prediction(x)
+        mask = self.WLN.mask_prediction(x)
         input = torch.cat((x, mask), dim=1)
         
         params_4x = self.RGN(input)
@@ -24,7 +24,7 @@ class PatchWiper(nn.Module):
         return output, mask
 
     def mask_prediction(self, x):
-        mask = self.SegNet.mask_prediction(x)
+        mask = self.WLN.mask_prediction(x)
 
         params, lr_mask = self.RGN.mask_prediction(x, mask)
         output = self.PQN.mask_prediction(x, mask, params, lr_mask)
