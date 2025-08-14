@@ -58,7 +58,7 @@ We also show some qualitative comparision with state-of-art methods:
 ![qualitative](figs/qualitative_sup.png)
 
 ## **Acknowledgements**
-Part of the code is based upon the previous work [SLBR](https://github.com/bcmi/SLBR-Visible-Watermark-Removal), [Restormer](https://github.com/swz30/Restormer) and [CoordFill](https://github.com/NiFangBaAGe/CoordFill).
+Part of the code is based upon the previous work [SLBR](https://github.com/bcmi/SLBR-Visible-Watermark-Removal), [Restormer](https://github.com/swz30/Restormer) and [CoordFill](https://github.com/NiFangBaAGe/CoordFill). We thank the author for sharing their wonderful code.
 
 
 ## Citation
