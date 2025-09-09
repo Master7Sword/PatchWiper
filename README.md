@@ -73,7 +73,7 @@ If you find this work or code is helpful in your research, please cite:
 
 ```
 @inproceedings{Mo2025PatchWiper,
-  author    = {Zihao Mo and Junye Chen and Chaowei Fang and Guanbin Li},
+  author    = {Zihao Mo, Junye Chen, Chaowei Fang and Guanbin Li},
   title     = {PatchWiper: Leveraging Dynamic Patch-Wise Parameters for Real-World Visible Watermark Removal},
   booktitle = {Proceedings of the 33rd ACM International Conference on Multimedia},
   year      = {2025},
