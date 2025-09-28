@@ -1,7 +1,9 @@
-# PatchWiper
-[ACM MM 2025] PatchWiper: Leveraging Dynamic Patch-Wise Parameters for Real-World Visible Watermark Removal
+<div align="center">
 
-![teaser](figs/teaser.png)
+![PatchWiper](figs/PatchWiper.png)
+<h1>PatchWiper: Leveraging Dynamic Patch-Wise Parameters for Real-World Visible Watermark Removal</h1>
+
+</div>
 
 ## Introduction
 The official implementation of the following paper:
@@ -61,6 +63,8 @@ Here is the model trained on PRWD dataset:
 
 ## Visualization Results
 We also show some qualitative comparision with state-of-art methods:
+
+![teaser](figs/teaser.png)
 
 ![qualitative](figs/qualitative_sup.png)
 
