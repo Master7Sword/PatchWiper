@@ -1,6 +1,8 @@
 <div align="center">
 
-![PatchWiper](figs/PatchWiper.png)
+<div class="logo">
+      <img src="figs/PatchWiper.png">
+</div>
 <h1>PatchWiper: Leveraging Dynamic Patch-Wise Parameters for Real-World Visible Watermark Removal</h1>
 
 </div>
