@@ -15,7 +15,7 @@ The official implementation of the following paper:
 > <br>Zihao Mo<sup>1</sup>, Junye Chen<sup>1</sup>, Chaowei Fang<sup>2</sup> and Guanbin Li<sup>1</sup>
 > <br><sup>1</sup>Human Cyber Physical (HCP) Intelligence Integration Lab, School of Computer Science and Engineering, Sun Yat-Sen University.
 > <br><sup>2</sup>School of Artificial Intelligence, Xidian University<br>
-([ACM MM 2025](https://drive.google.com/file/d/1H5QfambDnhI2pyo41lwsZRcsqS-tf_D8/view?usp=drive_link))
+([ACM MM 2025](https://dl.acm.org/doi/10.1145/3746027.3755107))
 
 ## PatchWiper Network
 
